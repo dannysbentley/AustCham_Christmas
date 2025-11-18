@@ -1,0 +1,21 @@
+{
+  "name": "austcham-cards",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AustCham AI Christmas Cards monorepo",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev:creator": "npm run dev -w apps/creator",
+    "build:creator": "npm run build -w apps/creator",
+    "preview:creator": "npm run preview -w apps/creator",
+    "dev:wall": "npm run dev -w apps/wall",
+    "build:wall": "npm run build -w apps/wall",
+    "preview:wall": "npm run preview -w apps/wall",
+    "lint": "echo 'Add linters per package'"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
